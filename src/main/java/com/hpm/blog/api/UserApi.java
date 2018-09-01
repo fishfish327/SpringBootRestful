@@ -31,4 +31,5 @@ public class UserApi {
     public Object findById(@PathVariable int id) {
         return userService.findById(id);
     }
+   
 }
