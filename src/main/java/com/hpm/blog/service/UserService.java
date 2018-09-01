@@ -57,4 +57,9 @@ public class UserService {
         param.setName(name);
         return userMapper.findOne(param);
     }
+
+    public boolean comparePassword(User user, User userInDataBase){
+        return passwordToHash(user.getPassword())
+                .equals(userInDataBase.getPassword());
+    }
 }
