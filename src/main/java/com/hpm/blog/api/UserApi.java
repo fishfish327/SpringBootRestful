@@ -2,6 +2,7 @@ package com.hpm.blog.api;
 
 
 import com.alibaba.fastjson.JSONObject;
+import com.hpm.blog.annotation.LoginRequired;
 import com.hpm.blog.model.User;
 import com.hpm.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,5 +32,11 @@ public class UserApi {
     public Object findById(@PathVariable int id) {
         return userService.findById(id);
     }
-   
+
+    @LoginRequired
+    @GetMapping("/test")
+    public Object testLogin() {
+        return "success";
+    }
+
 }
