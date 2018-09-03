@@ -154,3 +154,112 @@
  ==> Parameters: zhangsan(String) 
 2018-09-02 11:21:54 [http-nio-8080-exec-3] DEBUG c.h.blog.mapper.UserMapper.findOne : 
  <==      Total: 1 
+2018-09-02 16:39:55 [restartedMain] INFO  c.h.blog.SpringBootBlogApplication : 
+ Starting SpringBootBlogApplication on unknown7429AF2C9AE3 with PID 12285 (/home/ted/shuai/18-fall-work-collection/git-project/spring-boot-blog/target/classes started by ted in /home/ted/shuai/18-fall-work-collection/git-project/spring-boot-blog) 
+2018-09-02 16:39:55 [restartedMain] DEBUG c.h.blog.SpringBootBlogApplication : 
+ Running with Spring Boot v1.4.3.RELEASE, Spring v4.3.5.RELEASE 
+2018-09-02 16:39:55 [restartedMain] INFO  c.h.blog.SpringBootBlogApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-09-02 16:40:01 [restartedMain] INFO  c.h.blog.SpringBootBlogApplication : 
+ Started SpringBootBlogApplication in 8.035 seconds (JVM running for 12.31) 
+2018-09-02 16:40:18 [http-nio-8080-exec-1] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-09-02 16:40:18 [http-nio-8080-exec-1] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-09-02 16:40:18 [http-nio-8080-exec-1] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-09-02 16:40:35 [http-nio-8080-exec-2] ERROR c.h.b.config.GlobalExceptionHandler : 
+ java.lang.RuntimeException: there is no token
+	at com.hpm.blog.config.AuthenticationInterceptor.preHandle(AuthenticationInterceptor.java:39)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:958)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ 
+2018-09-02 16:41:19 [http-nio-8080-exec-3] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE name=?  
+2018-09-02 16:41:19 [http-nio-8080-exec-3] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==> Parameters: zhangsan(String) 
+2018-09-02 16:41:19 [http-nio-8080-exec-3] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-09-02 16:41:53 [http-nio-8080-exec-4] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-09-02 16:41:53 [http-nio-8080-exec-4] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-09-02 16:41:53 [http-nio-8080-exec-4] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-09-02 19:41:15 [http-nio-8080-exec-6] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-09-02 19:41:15 [http-nio-8080-exec-6] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-09-02 19:41:15 [http-nio-8080-exec-6] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-09-02 19:43:37 [restartedMain] INFO  c.h.blog.SpringBootBlogApplication : 
+ Starting SpringBootBlogApplication on unknown7429AF2C9AE3 with PID 13661 (/home/ted/shuai/18-fall-work-collection/git-project/spring-boot-blog/target/classes started by ted in /home/ted/shuai/18-fall-work-collection/git-project/spring-boot-blog) 
+2018-09-02 19:43:37 [restartedMain] DEBUG c.h.blog.SpringBootBlogApplication : 
+ Running with Spring Boot v1.4.3.RELEASE, Spring v4.3.5.RELEASE 
+2018-09-02 19:43:37 [restartedMain] INFO  c.h.blog.SpringBootBlogApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-09-02 19:43:42 [restartedMain] INFO  c.h.blog.SpringBootBlogApplication : 
+ Started SpringBootBlogApplication in 6.864 seconds (JVM running for 8.149) 
+2018-09-02 19:43:55 [http-nio-8080-exec-1] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-09-02 19:43:55 [http-nio-8080-exec-1] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-09-02 19:43:55 [http-nio-8080-exec-1] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ <==      Total: 1 
+2018-09-02 19:45:11 [restartedMain] INFO  c.h.blog.SpringBootBlogApplication : 
+ Starting SpringBootBlogApplication on unknown7429AF2C9AE3 with PID 13835 (/home/ted/shuai/18-fall-work-collection/git-project/spring-boot-blog/target/classes started by ted in /home/ted/shuai/18-fall-work-collection/git-project/spring-boot-blog) 
+2018-09-02 19:45:11 [restartedMain] DEBUG c.h.blog.SpringBootBlogApplication : 
+ Running with Spring Boot v1.4.3.RELEASE, Spring v4.3.5.RELEASE 
+2018-09-02 19:45:11 [restartedMain] INFO  c.h.blog.SpringBootBlogApplication : 
+ No active profile set, falling back to default profiles: default 
+2018-09-02 19:45:17 [restartedMain] INFO  c.h.blog.SpringBootBlogApplication : 
+ Started SpringBootBlogApplication in 7.344 seconds (JVM running for 8.789) 
+2018-09-02 19:45:31 [http-nio-8080-exec-1] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==>  Preparing: select * from user WHERE id=?  
+2018-09-02 19:45:31 [http-nio-8080-exec-1] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ ==> Parameters: 3(Integer) 
+2018-09-02 19:45:31 [http-nio-8080-exec-1] DEBUG c.h.blog.mapper.UserMapper.findOne : 
+ <==      Total: 1 
