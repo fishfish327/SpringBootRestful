@@ -2,6 +2,7 @@ package com.hpm.blog.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -31,6 +32,19 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter{
     public CurrentUserMethodArgumentResolver currentUserMethodArgumentResolver() {
         return new CurrentUserMethodArgumentResolver();
     }
+
+    @Override
+    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+        converters.add(fastJsonHttpMessageConverterEx());
+        super.configureMessageConverters(converters);
+    }
+
+    @Bean
+    public FastJsonHttpMessageConverterEx fastJsonHttpMessageConverterEx() {
+        return new FastJsonHttpMessageConverterEx();
+    }
+
+
 
 
 }
